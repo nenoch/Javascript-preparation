@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Employees' List</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+ </head>
+
+ <body>
+   <nav class="navbar navbar-inverse navbar-static-top">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <div class="navbar-brand">Employees' List</div>
+       </div>
+     </div>
+   </nav>
+
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+        <table class="table table-responsive table-striped" id="employeesTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Skills</th>
+              <th>Salary</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-md-12">
+         <h3>Add new employee</h3>
+         <form id="addEditForm" class="form-inline">
+           <div class="form-group">
+             <label class="sr-only" for="id">ID</label>
+             <input type="text" class="form-control" id="id" placeholder="Employee ID">
+           </div>
+          <div class="form-group">
+            <label class="sr-only" for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="role">Role</label>
+            <input type="text" class="form-control" id="role" placeholder="Role">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="skills">Skills</label>
+            <input type="text" class="form-control" id="skills" placeholder="3 Skills">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="salary">Salary</label>
+            <div class="input-group">
+              <div class="input-group-addon">£</div>
+              <input type="text" class="form-control" id="salary" placeholder="Salary">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+       </div>
+     </div>
+   </div>
+
+  <script src="./data/employees.json"></script>
+  <script src="./views/employeeView.js"></script>
+  <script src="./models/employeeModel.js"></script>
+  <script src="./src/employeesList.js"></script>
+  <script src="./index.js"></script>
+
+ </body>
+
+ </html>

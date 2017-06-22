@@ -1,0 +1,25 @@
+var data = {
+      "employees":[
+         {
+            "id":"1234",
+            "name":"Lara Powell",
+            "role":"Software Developer",
+            "skills":["Javascript", "HTML/CSS", "Team Player"],
+            "salary":45000
+         },
+         {
+            "id":"5678",
+            "name":"Kim Olsen",
+            "role":"Project Manager",
+            "skills":["PRINCE2", "Scrum Master", "Natural Leader"],
+            "salary":55000
+         },
+         {
+            "id":"9101",
+            "name": "Freya Smith",
+            "role":"Graduate",
+            "skills":["CAD", "Quick Learner", "BA Marketing"],
+            "salary":25000
+         }
+      ]
+}
